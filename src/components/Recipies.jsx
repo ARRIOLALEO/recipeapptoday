@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { RecipiesContext } from '../context/GeneralContext' 
 import {Card,CardHeader,CardContent,Divider,CardMedia,Grid,Button,Box} from '@mui/material'
+
 import {Link} from 'react-router-dom'
 function Recipies(){
     const styleHeader = {
@@ -9,6 +10,7 @@ function Recipies(){
     const {allRecipes} = useContext(RecipiesContext)
     return(
         <>
+
         <h1>this are my recipies</h1>
         <Grid container spacing={2} style={styleHeader}>
             {
